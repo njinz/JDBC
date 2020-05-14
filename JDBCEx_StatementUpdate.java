@@ -10,13 +10,14 @@ public class JDBCEx_StatementUpdate {
 	 DBConn.getInstance();
 	 String sql="insert into person " + "values"              //¶ç¾î¾²±â ÇÊ¼ö
 				+ "(122,'È«3',123.23,sysdate,systimestamp)";
-	 DBConn.StatementUpdate(sql);
+	 DBConn.statementUpdate(sql);
 	 sql="delete from person " + "where no=2";
-	 DBConn.StatementUpdate(sql);
+	 DBConn.statementUpdate(sql);
 	 sql="update person " + "set name ='°­' "+ "where no=1" ;           //¶ç¾î¾²±â ÇÊ¼ö
-	 DBConn.StatementUpdate(sql);		
+	 DBConn.statementUpdate(sql);		
 	 DBConn.dbClose();
 	 System.out.println("Á¾·á ");
 	}
 
+	
 }
